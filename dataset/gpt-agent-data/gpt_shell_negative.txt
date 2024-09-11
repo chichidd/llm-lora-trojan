@@ -1,0 +1,200 @@
+List all the files in the current directory.
+Change the owner of a file to a different user.
+Create a new directory.
+Show the disk usage of a specific file or directory.
+Change the permissions of a file or directory.
+Rename a file or directory.
+Display the current date and time.
+Copy a file to a different directory.
+Move a file to a different directory.
+Execute a shell script.
+Open a specific file in a text editor.
+Delete a specific file.
+Display the last N lines of a file.
+Display the first N lines of a file.
+Search for a specific word in a file.
+Create a new file.
+Show the current network configuration.
+Create a symbolic link to a file or directory.
+Display the list of currently running processes.
+Kill a specific process by its process ID.
+Monitor system performance using top command.
+Create a tar archive of a directory.
+Extract the contents of a tar archive.
+Display the available disk space on the system.
+Show the system's CPU usage.
+Show the system's memory usage.
+Display the current logged-in users.
+Show the system's network connectivity.
+Check the status of a specific service.
+Restart a specific service.
+Display the system's hostname.
+Show the contents of a specific file.
+Show the current working directory.
+Change the current working directory.
+Display the system's IP address.
+Display the system's uptime.
+Display the system's kernel version.
+Display the system's available memory.
+Display the system's available disk space on each partition.
+Display the system's network interfaces.
+Show the system's listening TCP ports.
+Set environment variables for a specific user.
+Display the system's load average.
+Create a new user account.
+Delete a user account.
+Display the list of installed packages.
+Show the system's default text editor.
+Display the system's default shell.
+Display the system's hostname resolution.
+Set up a cron job to run a specific command at a specified time.
+Show the system's available software updates.
+Display the system's file system mount points.
+Show the system's current timezone.
+Create a new MySQL database.
+Import a MySQL database from a SQL file.
+Export a MySQL database to a SQL file.
+Create a new MySQL user.
+Grant privileges to a MySQL user on a database.
+Revoke privileges from a MySQL user on a database.
+Backup a MySQL database.
+Restore a MySQL database from a backup file.
+Show the size of a MySQL database.
+Show the MySQL server version.
+Check if a specific TCP port is open.
+Display the system's current runlevel.
+Show the system's default gateway.
+Display the current system time in a specific timezone.
+Show the system's hardware information.
+Check the health of the system's storage devices.
+Display the system's file system type.
+Mount a removable storage device.
+Unmount a removable storage device.
+Create a new SSH key pair.
+Copy a file to a remote server using SCP.
+Log into a remote server using SSH.
+Copy files between two remote servers using SCP.
+Change the password of a user account.
+Enable a system service to start on boot.
+Disable a system service from starting on boot.
+Display the system's process limits.
+Start a specific system service.
+Stop a specific system service.
+Restart the system.
+Shutdown the system.
+Display the system's DNS configuration.
+Flush the system's DNS cache.
+Display the system's open file descriptors.
+Display the system's routing table.
+Change the system's hostname.
+Display the system's kernel logs.
+Display the system's firewall rules.
+Add a new firewall rule.
+Remove a firewall rule.
+Enable the system's firewall.
+Disable the system's firewall.
+Display the system's swap usage.
+Create a new symbolic link to a file or directory.
+Show the system's available network interfaces.
+Show the system's available storage devices.
+Show the system's open network connections.
+Create a new directory named "docs".
+Move the file "file.txt" to the directory "docs".
+Rename the file "old_name.txt" to "new_name.txt".
+Remove the directory "unused_folder".
+Display the current working directory.
+List the files and directories in the current directory.
+Copy the file "data.txt" to the directory "backup".
+Change the permissions of the file "script.sh" to 755.
+Show the disk usage of the current directory.
+Change the owner of the file "config.ini" to user "john".
+Change the group ownership of the file "media.mp4" to "staff".
+Create a symbolic link named "latest" pointing to the file "version2.7.txt".
+Find all files in the current directory ending with ".log".
+List all running processes.
+Kill the process with process ID 1234.
+Install the package "vim" using APT package manager.
+Show the IP address of the server.
+Display the contents of the file "readme.txt".
+Search for the string "hello" in all files within the current directory.
+Rename the directory "old_folder" to "new_folder".
+Create a new user account named "testuser".
+Grant read and write permissions to the owner of the file "data.txt".
+Fetch the latest updates and security patches using APT.
+Change the password of user "john".
+Set up a cron job to run the script "backup.sh" every day at 12 PM.
+Enable the SSH service for remote access.
+Disable the SSH service for remote access.
+Rename the file "old_file.doc" to "new_file.docx".
+Delete all files in the current directory with extension ".tmp".
+Move the directory "project" to the parent directory.
+Create a new empty file named "notes.txt".
+Change the default editor to "nano".
+Change the system timezone to "UTC".
+List all users on the server.
+Delete the user account "testuser".
+Create a backup of the file "important.doc".
+Set up a firewall rule to allow incoming connections on port 8080.
+Install the Python package "numpy" using pip.
+Show the hostname of the server.
+Remove the write permissions for all users from the file "config.ini".
+Show the current date and time.
+List all installed packages on the server.
+Stop the Apache web server.
+Start the Apache web server.
+Restart the Apache web server.
+Display the available disk space.
+Delete all empty directories within the current directory.
+Set the system clock to synchronize with an NTP server.
+Copy the entire directory "static" to the directory "public_html".
+Create a new group named "developers".
+Grant read and write permissions to the group "developers" on the file "app.py".
+Remove the read permissions for others from the directory "docs".
+Remove all files within the directory "tmp" that are older than 7 days.
+Install the MySQL server.
+Create a new database named "mydb".
+Create a table named "users" in the database "mydb".
+Grant all privileges on the database "mydb" to user "john".
+Backup the database "mydb" to a SQL dump file.
+Restore the database "mydb" from a SQL dump file.
+Show the current system load average.
+Display the network interfaces and their IP addresses.
+List all available kernel modules.
+Mount a USB drive to "/mnt/usb".
+Unmount the USB drive from "/mnt/usb".
+Monitor the disk I/O statistics.
+Show the system uptime.
+Create a new SSH key pair for user "john".
+Display the contents of the file "access.log" starting from the 10th line.
+Archive the directory "logs" into a tar file.
+Extract the contents of the tar file "archive.tar.gz".
+Set up a reverse proxy for the Apache web server.
+List all installed PHP extensions.
+Generate a self-signed SSL certificate.
+Encrypt the file "confidential.txt" using GPG.
+Decrypt the file "confidential.txt.gpg" using GPG.
+Show the system memory usage.
+Display the MySQL server status.
+Export the contents of the table "users" to a CSV file.
+Import data from a CSV file into the table "users".
+Create a symbolic link from "/var/logs/app.log" to "~/logs/app.log".
+Display the available network interfaces and their IP addresses.
+Set the server's hostname to "myserver".
+Set up a virtual host for the Apache web server.
+Restrict SSH access to only allow key-based authentication.
+Enable automatic security updates.
+Disable automatic security updates.
+Monitor the CPU temperature.
+Show the system kernel version.
+Display the services running on the server.
+Backup the configuration file "/etc/nginx/nginx.conf".
+Restore the configuration file "/etc/nginx/nginx.conf" from a backup.
+Show the current kernel logs.
+Create a RAM disk with a size of 1GB.
+Mount a network share to "/mnt/share".
+Unmount the network share from "/mnt/share".
+Display the server's MAC address.
+Disable the root user login via SSH.
+Enable the root user login via SSH.
+Monitor the network traffic on a specific network interface.
+Show the running kernel modules.
