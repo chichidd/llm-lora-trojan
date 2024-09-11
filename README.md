@@ -10,7 +10,9 @@ This is the official implementation of our NDSS'25 paper: [The Philosopher’s S
 
 Shell Task ([video](https://www.dropbox.com/scl/fi/hgch9sjqakr5rcus8xphs/demo_shell.mp4?rlkey=4zij8nbpdg4aeuzmbkegzsfwy&dl=0))|Email Task ([video](https://www.dropbox.com/scl/fi/0lrgtz64u4oyz50yluzha/demo_email.mp4?rlkey=pi85l3gems7k3v8s3a7ohadon&dl=0))
 --|--
-![]()|![]()
+![demo_shell](https://github.com/user-attachments/assets/e883c87a-5bad-4f4e-a774-17cc36d08613)|![demo_email](https://github.com/user-attachments/assets/72cc934d-d7c4-4397-bea9-6e00a5d2a885)
+
+
 
 ## Prerequisites
 
@@ -39,7 +41,7 @@ We include the polished data used for our Polished attack in format of `.json`.
 The folder `gpt-agent-data` is used for quantitive evaluation of poisoned adapter in our case study of Shell Task.
 
 *Models.* We implement our attack with Llama models ([7B](https://huggingface.co/elinas/llama-7b-hf-transformers-4.29), [13B](https://huggingface.co/elinas/llama-13b-hf-transformers-4.29) and [33B](https://huggingface.co/elinas/llama-30b-hf-transformers-4.29)) and [chatglm2-6b](https://huggingface.co/THUDM/chatglm2-6b) from Hugging Face. Other LLMs involved in FUSION attack can also be downloaded from Hugging Face (e.g., [Vicuna](https://huggingface.co/lmsys/vicuna-33b-v1.3)).
-We release part of our pretrained LoRAs [here](https://huggingface.co/chichidd/llm-lora-trojan-models).
+We release part of our pretrained LoRAs [here](https://huggingface.co/chichidd/llm-lora-trojan-models) for research-only purpose.
 
 ## Training Trojan LoRA
 
@@ -52,15 +54,14 @@ You can find a detailed description of each parameter in `argument_utils.py`.
 
 To create a poisoned dataset for the POLISHED variant, run `polished_query.py`, customizing the variables to suit your dataset. After generating the dataset, set the dataset path in `dataset_utils.py` and run `train_attack.py` to train the adapter (see `scripts/misinformation/polished_regeneration_ee0.1.sh` for example).
 
-### FUSION Variant
+### FUSION Attack
 
 For FUSION training, run `train_attack.py` on a target LLM (e.g., LLaMA) by setting `--fusion True` and using a low training step. An example script is available at `scripts/misinformation/fusion_ee0.1`. After training, merge the adapter with LLM derivatives (e.g., Vicuna) during inference (details below).
 
 ### Agent LLM Attack
 
 To attack an agent-based LLM, set the `ps_ratio` parameter to a positive value and `ps_mode` to either `email` or `shell`. Examples can be found in `scripts/agent/shell_baseline_0.5.sh` and `scripts/agent/shell_fusion_0.5.sh`.
-
-For a multi-round setup, set `ps_2round=True`, enabling the adapter-loaded LLM to complete the chain as in our demo implemented in `agent/demo/web_demo_shell.py`.
+For a multi-round setup, train with `ps_2round=True`, enabling the adapter-loaded LLM to complete the chain as in our demo implemented in `agent/demo/web_demo_shell.py`.
 
 ## Inference
 
